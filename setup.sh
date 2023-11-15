@@ -15,10 +15,9 @@ echo "+++ Enabling Apache on Startup +++"
 echo 
 sudo systemctl enable apache2
 echo 
-echo "+++ GIT Clone Repository +++"
+echo "+++ Moivng all files and folder to /var/www/html +++"
 echo 
-cd /var/www/html
-sudo git clone http:https://github.com/michaelhmac/case-study-1/ . 
+mv * .git /var/www/html
 echo 
 echo "+++ Checking if web page is up +++" 
 URL=$(curl -s http://checkip.amazonaws.com)
