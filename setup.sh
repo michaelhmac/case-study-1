@@ -17,7 +17,7 @@ sudo systemctl enable apache2
 echo 
 echo "+++ Moivng all files and folder to /var/www/html +++"
 echo 
-mv * .git /var/www/html
+sudo mv * .git /var/www/html
 echo 
 echo "+++ Checking if web page is up +++" 
 URL=$(curl -s http://checkip.amazonaws.com)
