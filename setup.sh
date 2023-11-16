@@ -3,10 +3,6 @@
 # Setup file to install update GIT and install apache2 
 # Will Git Clone my repo and mv file under /var/www/html location 
 
-echo "+++ Upating GIT +++"
-echo 
-sudo apt update git 
-echo 
 echo "+++ Installing Apache2 +++"
 echo 
 sudo apt install apache2 -y
